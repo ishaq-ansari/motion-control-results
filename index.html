@@ -6,13 +6,25 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Welcome to my GitHub Pages site!</h1>
-  <p>This is a simple static page hosted on GitHub Pages.</p>
-  <img src="test_char.png" alt="Sample image">
-  <video width="640" controls>
-    <source src="i2v_30s_20260224_034345.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-  <p>Enjoy your content!</p>
+  <header>
+    <h1>Motion‑Control Demo Results</h1>
+    <p class="tagline">End‑to‑end image‑to‑video generation with Wan2.1 I2V 14B</p>
+</header>
+<section class="description">
+    <p>This repository hosts sample outputs from a project I developed: a <strong>motion-control pipeline</strong> that generates 1080p, 10–30 second videos from a single character image and text prompts using the Wan2.1 I2V 14B diffusion model. The goal is to demonstrate end‑to‑end image‑to‑video synthesis for animation and storytelling.</p>
+</section>
+<section class="assets">
+    <div class="media-row">
+        <figure>
+            <img src="test_char.png" alt="Input character image" />
+            <figcaption>Source character image used for the demo.</figcaption>
+        </figure>
+        <video width="640" controls>
+            <source src="i2v_30s_20260224_034345.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <p class="note">Video rendered at 1080p using the I2V 14B model; each frame is generated from the input image and prompt sequence.</p>
+</section>
 </body>
 </html>
