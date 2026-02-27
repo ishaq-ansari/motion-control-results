@@ -33,14 +33,20 @@ header {
 
 .media-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 1.5rem;
+  align-items: flex-start;
 }
 
 .media-row figure, .media-row video {
-  flex: 1 1 300px;
-  max-width: 45%;
+  flex: 0 0 400px;
+  max-width: 400px;
+}
+
+.media-row figure img, .media-row video {
+  width: 100%;
+  height: auto;
 }
 
 .note {
